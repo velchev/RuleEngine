@@ -34,9 +34,9 @@
             // chkListAnswers
             // 
             this.chkListAnswers.FormattingEnabled = true;
-            this.chkListAnswers.Location = new System.Drawing.Point(23, 34);
+            this.chkListAnswers.Location = new System.Drawing.Point(77, 133);
             this.chkListAnswers.Name = "chkListAnswers";
-            this.chkListAnswers.Size = new System.Drawing.Size(450, 244);
+            this.chkListAnswers.Size = new System.Drawing.Size(331, 154);
             this.chkListAnswers.TabIndex = 0;
             // 
             // Form1

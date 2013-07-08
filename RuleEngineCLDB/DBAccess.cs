@@ -1,12 +1,21 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Xml.Linq;
-using RuleEngine;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="DBAccess.cs" company="Softopia">
+//   
+// </copyright>
+// <summary>
+//   Defines the DBAccess type.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
 namespace RuleEngineCL
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Xml.Linq;
+    using RuleEngine;
+
     /// <summary>
-    /// 
+    /// Something like DB layer which works with the data - it could be XML or Relational Database
     /// </summary>
     public class DBAccess
     {
@@ -20,8 +29,8 @@ namespace RuleEngineCL
         public static List<Question> LoadQuestions(string filePath)
         {
             var quetions = new List<Question>();
-            XElement xelement = XElement.Load(filePath);
-            IEnumerable<XElement> elements = xelement.Elements();
+            var xelement = XElement.Load(filePath);
+            var elements = xelement.Elements();
             foreach (var element in elements)
             {
                 var question = new Question();

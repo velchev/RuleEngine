@@ -53,4 +53,27 @@
       </Option>
     </Options>
   </Question>
+  <Question Type="SingleChoice">
+    <ID>4</ID>
+    <Step>4</Step>
+    <Text>What is the biggest animal on the planet?</Text>
+    <Options>
+      <Option>
+        <ID>1</ID>
+        <Text>Elephant</Text>
+      </Option>
+      <Option>
+        <ID>2</ID>
+        <Text>Gorilla</Text>
+      </Option>
+      <Option>
+        <ID>3</ID>
+        <Text>Wale</Text>
+      </Option>
+      <Option>
+        <ID>4</ID>
+        <Text>Human</Text>
+      </Option>
+    </Options>
+  </Question>
 </Quetions>

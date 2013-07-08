@@ -1,8 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="Question.cs" company="Softopia">
+//   
+// </copyright>
+// <summary>
+//   The question.
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
+
+
 
 namespace RuleEngine
 {
+    using System;
+    using System.Collections.Generic;
+
     /// <summary>
     /// The question.
     /// </summary>
@@ -81,11 +92,11 @@ namespace RuleEngine
         /// </returns>
         public override string ToString()
         {
-            return string.Format("Question [ID:{0}, Step:{1}, Text:{2}, Type:{3}]", 
-                            ID.ToString(), 
-                            Step.ToString(), 
-                            Text,
-                            Type);
+            return string.Format("Question [ID:{0}, Step:{1}, Text:{2}, Type:{3}]",
+                            this.ID, 
+                            this.Step, 
+                            this.Text,
+                            this.Type);
         }
 
         /// <summary>
@@ -93,7 +104,14 @@ namespace RuleEngine
         /// </summary>
         public enum QuestionType
         {
+            /// <summary>
+            /// Single choice Question
+            /// </summary>
             SingleChoice,
+
+            /// <summary>
+            /// Multiple choice Question
+            /// </summary>
             MultipleChoice
         }
     }

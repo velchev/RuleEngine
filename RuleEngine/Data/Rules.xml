@@ -20,4 +20,19 @@
     <Qestions>3=1,2,3#2=1</Qestions>
     <Result>You have nervous breakdown!</Result>
   </Rule>
+  <Rule>
+    <ID>5</ID>
+    <Qestions>4=3</Qestions>
+    <Result>Yes the wale is the biggest animal on the planet!</Result>
+  </Rule>
+  <Rule>
+    <ID>6</ID>
+    <Qestions>4=2</Qestions>
+    <Result>No Elephant is not the biggest animal - sorry!</Result>
+  </Rule>
+  <Rule>
+    <ID>7</ID>
+    <Qestions>4</Qestions>
+    <Result>You didn't guessed that!</Result>
+  </Rule>
 </Rules>

@@ -1,5 +1,5 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Rule.cs" company="">
+// <copyright file="Rule.cs" company="Softopia">
 //   
 // </copyright>
 // <summary>
@@ -48,18 +48,26 @@ namespace RuleEngineCL
         {
             var result = new List<KeyValuePair<int, int>>();
 
-            KeyValuePair<int, int> kvp;
-
             string[] arr = questionsAndAnswers.Split('#');
             foreach (var s in arr)
             {
-                string q = s.Split('=')[0];
-                string[] answers = s.Split('=')[1].Split(',');
-                foreach (var answer in answers)
+                string[] split = s.Split('=');
+                string q = split[0];
+                KeyValuePair<int, int> kvp;
+                if (split.Length == 1)
                 {
-                    kvp = new KeyValuePair<int, int>(int.Parse(q), int.Parse(answer));
-                    result.Add(kvp);
+                    kvp = new KeyValuePair<int, int>();
                 }
+                else
+                {
+                    string[] answers = s.Split('=')[1].Split(',');
+                    foreach (var answer in answers)
+                    {
+                        kvp = new KeyValuePair<int, int>(int.Parse(q), int.Parse(answer));
+                        result.Add(kvp);
+                    }
+                }
+
             }
 
             return result;
