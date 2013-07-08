@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleEngineCL", "RuleEngineC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleEngineCLDB", "RuleEngineCLDB\RuleEngineCLDB.csproj", "{70B94E4D-0F00-4675-90B2-A9E23515A6E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RuleEngineWinFormsTester", "RuleEngineWinFormsTester\RuleEngineWinFormsTester.csproj", "{659A2EBE-CBE1-4AD6-B749-43CCE1D74A9A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,10 +25,6 @@ Global
 		{70B94E4D-0F00-4675-90B2-A9E23515A6E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70B94E4D-0F00-4675-90B2-A9E23515A6E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70B94E4D-0F00-4675-90B2-A9E23515A6E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{659A2EBE-CBE1-4AD6-B749-43CCE1D74A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{659A2EBE-CBE1-4AD6-B749-43CCE1D74A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{659A2EBE-CBE1-4AD6-B749-43CCE1D74A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{659A2EBE-CBE1-4AD6-B749-43CCE1D74A9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
