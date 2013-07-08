@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Quetions>
+  <Question Type="SingleChoice">
+    <ID>1</ID>
+    <Step>1</Step>
+    <Text>The capital of UK is?</Text>
+    <Options>
+      <Option>
+        <ID>1</ID>
+        <Text>Sofia</Text>
+      </Option>
+      <Option>
+        <ID>2</ID>
+        <Text>London</Text>
+      </Option>
+      <Option>
+        <ID>3</ID>
+        <Text>Paris</Text>
+      </Option>
+    </Options>
+  </Question>
+  <Question Type="SingleChoice">
+    <ID>2</ID>
+    <Step>2</Step>
+    <Text>The capital of France is?</Text>
+    <Options>
+      <Option>
+        <ID>1</ID>
+        <Text>Paris</Text>
+      </Option>
+      <Option>
+        <ID>2</ID>
+        <Text>London</Text>
+      </Option>
+    </Options>
+  </Question>
+  <Question Type="MultipleChoice">
+    <ID>3</ID>
+    <Step>3</Step>
+    <Text>How do you feel today?</Text>
+    <Options>
+      <Option>
+        <ID>1</ID>
+        <Text>Depressed</Text>
+      </Option>
+      <Option>
+        <ID>2</ID>
+        <Text>Upset</Text>
+      </Option>
+      <Option>
+        <ID>3</ID>
+        <Text>Nurveous</Text>
+      </Option>
+    </Options>
+  </Question>
+</Quetions>
