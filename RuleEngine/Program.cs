@@ -7,6 +7,9 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.IO;
+
+
 namespace RuleEngine
 {
     using System;
@@ -93,8 +96,6 @@ namespace RuleEngine
             testResult.Add(new KeyValuePair<int, int>(3, 2));
             testResult.Add(new KeyValuePair<int, int>(4, 3));
             Console.WriteLine(Answer.Evaluate(testResult, rules));
-
-
         }
     }
 }

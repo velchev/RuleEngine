@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>MSTestExtensions</id>
+    <version>3.0.0</version>
+    <authors>bbraithwaite</authors>
+    <owners>bbraithwaite</owners>
+    <projectUrl>https://github.com/bbraithwaite/mstestextensions</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>An extendible implementation of the Assert class in MSTest. Allows for extending the Assert methods with the default MSTest methods as a default. Also includes a Throws() method for asserting exceptions. INSTRUCTIONS: Inherit from BaseTest. Type Assert.Throws() That's it! Project page can be found at: https://github.com/bbraithwaite/MSTestExtensions</description>
+    <summary>An extendible implementation of the Assert class in MSTest. Allows for extending the Assert methods with the default MSTest methods as a default. Also includes a Throws() method for asserting exceptions.</summary>
+    <releaseNotes>Created package.</releaseNotes>
+    <copyright>Copyright 2012</copyright>
+    <tags>MSTest Throws Extension</tags>
+  </metadata>
+</package>
