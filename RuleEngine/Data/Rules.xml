@@ -1,38 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Rules>
   <Rule>
-    <ID>1</ID>
+    <Id>1</Id>
     <Qestions>1=1</Qestions>
     <Result>Busy</Result>
   </Rule>
   <Rule>
-    <ID>2</ID>
+    <Id>2</Id>
     <Qestions>1=1,2#2=1</Qestions>
     <Result>You have to go out</Result>
   </Rule>
   <Rule>
-    <ID>3</ID>
+    <Id>121</Id>
+    <Qestions>1</Qestions>
+    <Result>Question 1 default answer!</Result>
+  </Rule>
+  <Rule>
+    <Id>3</Id>
     <Qestions>2=3</Qestions>
     <Result>No way</Result>
   </Rule>
   <Rule>
-    <ID>4</ID>
+    <Id>4</Id>
     <Qestions>3=1,2,3#2=1</Qestions>
     <Result>You have nervous breakdown!</Result>
   </Rule>
   <Rule>
-    <ID>5</ID>
+    <Id>5</Id>
     <Qestions>4=3</Qestions>
     <Result>Yes the wale is the biggest animal on the planet!</Result>
   </Rule>
   <Rule>
-    <ID>6</ID>
+    <Id>6</Id>
     <Qestions>4=2</Qestions>
     <Result>No Elephant is not the biggest animal - sorry!</Result>
   </Rule>
   <Rule>
-    <ID>7</ID>
+    <Id>7</Id>
     <Qestions>4</Qestions>
-    <Result>You didn't guessed that!</Result>
+    <Result>You didn't guessed that! - Default answer of the 4th question</Result>
+  </Rule>
+  <Rule>
+    <Id>8</Id>
+    <Qestions>1=1#2=1#3=1,2#4=3</Qestions>
+    <Result>You solved the entire quiz correctly!</Result>
   </Rule>
 </Rules>

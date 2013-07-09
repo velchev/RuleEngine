@@ -1,77 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Quetions>
   <Question Type="SingleChoice">
-    <ID>1</ID>
+    <Id>1</Id>
     <Step>1</Step>
     <Text>The capital of UK is?</Text>
     <Options>
       <Option>
-        <ID>1</ID>
+        <Id>1</Id>
         <Text>Sofia</Text>
       </Option>
       <Option>
-        <ID>2</ID>
+        <Id>2</Id>
         <Text>London</Text>
       </Option>
       <Option>
-        <ID>3</ID>
+        <Id>3</Id>
         <Text>Paris</Text>
       </Option>
     </Options>
   </Question>
   <Question Type="SingleChoice">
-    <ID>2</ID>
+    <Id>2</Id>
     <Step>2</Step>
     <Text>The capital of France is?</Text>
     <Options>
       <Option>
-        <ID>1</ID>
+        <Id>1</Id>
         <Text>Paris</Text>
       </Option>
       <Option>
-        <ID>2</ID>
+        <Id>2</Id>
         <Text>London</Text>
       </Option>
     </Options>
   </Question>
   <Question Type="MultipleChoice">
-    <ID>3</ID>
+    <Id>3</Id>
     <Step>3</Step>
     <Text>How do you feel today?</Text>
     <Options>
       <Option>
-        <ID>1</ID>
+        <Id>1</Id>
         <Text>Depressed</Text>
       </Option>
       <Option>
-        <ID>2</ID>
+        <Id>2</Id>
         <Text>Upset</Text>
       </Option>
       <Option>
-        <ID>3</ID>
+        <Id>3</Id>
         <Text>Nurveous</Text>
       </Option>
     </Options>
   </Question>
   <Question Type="SingleChoice">
-    <ID>4</ID>
+    <Id>4</Id>
     <Step>4</Step>
     <Text>What is the biggest animal on the planet?</Text>
     <Options>
       <Option>
-        <ID>1</ID>
+        <Id>1</Id>
         <Text>Elephant</Text>
       </Option>
       <Option>
-        <ID>2</ID>
+        <Id>2</Id>
         <Text>Gorilla</Text>
       </Option>
       <Option>
-        <ID>3</ID>
+        <Id>3</Id>
         <Text>Wale</Text>
       </Option>
       <Option>
-        <ID>4</ID>
+        <Id>4</Id>
         <Text>Human</Text>
       </Option>
     </Options>

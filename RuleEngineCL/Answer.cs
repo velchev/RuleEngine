@@ -29,19 +29,24 @@ namespace RuleEngineCL
         {
             foreach (var r in rules)
             {
-                //if there is no rule - then this is the default rule
-                //if (r.QandA.Count == 0)
-                //{
-                //    return r.Result;
-                //}
-
-                if (r.QandA.SequenceEqual(currentSelection))
+                if (r.QuestionsAndAnswers.SequenceEqual(currentSelection))
                 {
                     return r.Result;
                 }
             }
 
-            
+            foreach (var r in rules)
+            {
+                foreach (var questionAndAnswer in r.QuestionsAndAnswers)
+                {
+                    if (questionAndAnswer.Key == currentSelection[0].Key 
+                        && questionAndAnswer.Value == (int) Rule.SpecialRules.NotDefined)
+                    {
+                        return r.Result;
+                    }
+                }
+            }
+
             return "Not defined result";
         }
 
@@ -64,12 +69,7 @@ namespace RuleEngineCL
                 return true;
             }
 
-            if (currentSelection.Count > 1)
-            { 
-                return false;
-            }
-            
-            return true;
+            return currentSelection.Count == (int)Question.QuestionType.SingleChoice;
         }
     }
 }

@@ -44,12 +44,12 @@ namespace RuleEngine
 
         #region Properties
         /// <summary>
-        /// Gets or sets the ID.
+        /// Gets or sets the Id.
         /// </summary>
         /// <value>
-        /// The ID.
+        /// The Id.
         /// </value>
-        public int ID { get; set; }
+        public int Id { get; set; }
         
         /// <summary>
         /// Gets or sets the step. The sptes represents the sequence of questions.
@@ -92,8 +92,8 @@ namespace RuleEngine
         /// </returns>
         public override string ToString()
         {
-            return string.Format("Question [ID:{0}, Step:{1}, Text:{2}, Type:{3}]",
-                            this.ID, 
+            return string.Format("Question [Id:{0}, Step:{1}, Text:{2}, Type:{3}]",
+                            this.Id, 
                             this.Step, 
                             this.Text,
                             this.Type);
@@ -107,12 +107,12 @@ namespace RuleEngine
             /// <summary>
             /// Single choice Question
             /// </summary>
-            SingleChoice,
+            SingleChoice = 1,
 
             /// <summary>
             /// Multiple choice Question
             /// </summary>
-            MultipleChoice
+            MultipleChoice = 2
         }
     }
 }

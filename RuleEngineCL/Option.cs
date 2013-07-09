@@ -17,7 +17,7 @@ namespace RuleEngine
         /// <summary>
         /// Gets or sets the id.
         /// </summary>
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the text.

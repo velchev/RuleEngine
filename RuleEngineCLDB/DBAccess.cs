@@ -34,13 +34,13 @@ namespace RuleEngineCL
             foreach (var element in elements)
             {
                 var question = new Question();
-                question.ID = int.Parse(element.Element("ID").Value);
+                question.Id = int.Parse(element.Element("Id").Value);
                 question.Text = element.Element("Text").Value;
                 question.Type = Question.ParseEnum<Question.QuestionType>(element.Attribute("Type").Value);
                 foreach (var xElement in element.Element("Options").Elements("Option").ToList())
                 {
                     var option = new Option();
-                    option.ID = int.Parse(xElement.Element("ID").Value);
+                    option.Id = int.Parse(xElement.Element("Id").Value);
                     option.Text = xElement.Element("Text").Value;
 
                     question.Options.Add(option);
@@ -69,9 +69,9 @@ namespace RuleEngineCL
             foreach (var element in rElements)
             {
                 var rule = new Rule();
-                rule.ID = int.Parse(element.Element("ID").Value);
+                rule.Id = int.Parse(element.Element("Id").Value);
                 rule.Result = element.Element("Result").Value;
-                rule.QandA = Rule.ParseQestionsAndAnswers(element.Element("Qestions").Value);
+                rule.QuestionsAndAnswers = Rule.ParseQestionsAndAnswers(element.Element("Qestions").Value);
                 rules.Add(rule);
             }
 

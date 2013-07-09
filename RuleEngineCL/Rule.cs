@@ -11,23 +11,28 @@ namespace RuleEngineCL
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
 
     /// <summary>
     /// The rule.
     /// </summary>
     public class Rule
     {
+        public enum SpecialRules
+        {
+            NotDefined = -1
+        }
         #region Properties
 
         /// <summary>
         /// Gets or sets the id.
         /// </summary>
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         /// <summary>
         /// Gets or sets the q and a. (questions and answers)
         /// </summary>
-        public List<KeyValuePair<int, int>> QandA { get; set; }
+        public List<KeyValuePair<int, int>> QuestionsAndAnswers { get; set; }
 
         /// <summary>
         /// Gets or sets the result.
@@ -38,6 +43,27 @@ namespace RuleEngineCL
 
 
         #region Methods
+
+
+        /// <summary>
+        /// Returns a <see cref="System.String" /> that represents this instance.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String" /> that represents this instance.
+        /// </returns>
+        public override string ToString()
+        {
+            var questionsAndAnswers = new StringBuilder();
+            foreach (var qestionAndAnswer in QuestionsAndAnswers)
+            {
+                questionsAndAnswers.Append(string.Format(" #key[{0}], value[{1}]", qestionAndAnswer.Key, qestionAndAnswer.Value));
+            }
+
+            return string.Format("Rule [Id:{0}, QuestionsAndAnswers:{1}, Result:{2}]",
+                                 this.Id,
+                                 questionsAndAnswers,
+                                this.Result);
+        }
 
         /// <summary>
         /// Parses the qestions and answers.
@@ -56,7 +82,8 @@ namespace RuleEngineCL
                 KeyValuePair<int, int> kvp;
                 if (split.Length == 1)
                 {
-                    kvp = new KeyValuePair<int, int>();
+                    kvp = new KeyValuePair<int, int>(int.Parse(q), (int)SpecialRules.NotDefined);
+                    result.Add(kvp);
                 }
                 else
                 {
@@ -67,7 +94,6 @@ namespace RuleEngineCL
                         result.Add(kvp);
                     }
                 }
-
             }
 
             return result;

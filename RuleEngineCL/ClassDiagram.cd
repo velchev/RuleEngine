@@ -26,6 +26,13 @@
   </Class>
   <Class Name="RuleEngineCL.Rule">
     <Position X="7.5" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="RuleEngineCL.Rule.SpecialRules" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Rule.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAIAAAAAAAAAgAAAAAAAAAQAAAAAAAACAAAAAAAAAAA=</HashCode>
       <FileName>Rule.cs</FileName>
@@ -34,7 +41,7 @@
   <Class Name="RuleEngineCL.Answer">
     <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Answer.cs</FileName>
     </TypeIdentifier>
   </Class>
